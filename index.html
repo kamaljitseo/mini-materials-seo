@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quality Paneling, Roofing, and Flooring Solutions | Mini Materials</title>
+    <title>High-Quality Building Supplies Near You | Mini Materials</title>
     <meta name="description"
-        content="Shop premium roofing, flooring, and paneling solutions at Mini Materials. From slate tiles to cement roofing, find everything you need to elevate your home’s structure.">
+        content="Discover top-notch building supplies, roofing materials, and more at Mini Materials. Get your construction projects started with our wide selection of high-quality products delivered near you.">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -44,8 +44,8 @@
         nav ul {
             display: flex;
             justify-content: center;
+            gap: 25px;
             list-style: none;
-            gap: 20px;
             flex-wrap: wrap;
         }
 
@@ -53,6 +53,9 @@
             color: white;
             text-decoration: none;
             font-weight: 500;
+            font-size: 1rem;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
@@ -60,7 +63,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/roofing-flooring.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/building-materials.jpg');
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -85,16 +88,16 @@
 
         .categories {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             margin: 40px 0;
         }
 
         .category-card {
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -106,6 +109,7 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
+            display: block;
         }
 
         .category-content {
@@ -116,8 +120,23 @@
             background-color: var(--dark-color);
             color: white;
             padding: 40px 0;
-            margin-top: 40px;
+            margin-top: 60px;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 300px;
+                padding: 0 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .category-card img {
+                height: 180px;
+            }
         }
     </style>
 </head>
@@ -139,63 +158,61 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Premium Paneling, Roofing, and Flooring for Your Home</h1>
-            <p>Quality solutions for your home's structure</p>
+            <h1>Your Trusted Source for Building Supplies</h1>
+            <p>Quality materials for every construction need</p>
         </div>
     </section>
 
     <main class="container">
         <article>
-            <h2>Top Roofing Materials: Slate and Cement Tiles</h2>
-            <p>Slate tiles for roofs are known for their durability and natural elegance. With proper maintenance, slate
-                roofs can last for over a century. They’re ideal for homeowners looking for a traditional and premium
-                option. Cement tiles provide both durability and affordability, resisting weather elements while
-                offering a range of colors to suit your style.</p>
+            <h2>Find Building Materials for Every Project</h2>
 
             <div class="categories">
                 <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Building materials">
+                    <div class="category-content">
+                        <h3><a href="index.html">Building Materials</a></h3>
+                        <p>Everything you need for construction projects</p>
+                    </div>
+                </div>
+                <div class="category-card">
                     <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                        alt="Slate roofing tiles">
+                        alt="Roofing materials">
                     <div class="category-content">
-                        <h3>Slate Roofing</h3>
-                        <p>Premium natural stone roofing</p>
+                        <h3><a href="roofing-flooring.html">Roofing Materials</a></h3>
+                        <p>Quality roofing supplies for any project</p>
                     </div>
                 </div>
                 <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1679305153218-4c991b5850a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2VtZW50JTIwUm9vZmluZ3xlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Cement roofing tiles">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Lumber and wood supplies">
                     <div class="category-content">
-                        <h3>Cement Roofing</h3>
-                        <p>Durable and affordable roofing solution</p>
-                    </div>
-                </div>
-                <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                        alt="Flooring options">
-                    <div class="category-content">
-                        <h3>Flooring Options</h3>
-                        <p>Quality flooring for every room</p>
+                        <h3><a href="index.html">Lumber & Wood Supplies</a></h3>
+                        <p>Premium wood products for construction</p>
                     </div>
                 </div>
             </div>
 
-            <h2>Enhance Your Space with Quality Flooring Solutions</h2>
-            <p>Whether you're installing hardwood, vinyl, or laminate, selecting the right flooring material is crucial.
-                Our offerings include engineered wood, vinyl planks, and eco-friendly options to enhance durability and
-                design.</p>
+            <h2>A Wide Range of Building Supplies</h2>
+            <p>Our building supplies range from roofing products to lumber and masonry materials. We offer premium
+                quality products such as metal roofing, siding, and more for both commercial and residential projects.
+                With years of experience in the industry, we understand the importance of quality, which is why we only
+                offer products from trusted manufacturers.</p>
 
-            <h2>How to Replace Roof Tiles and Maintenance Tips</h2>
-            <p>Regular inspection and prompt replacement of cracked or missing tiles can prevent leaks and costly
-                damage. DIY-friendly or professionally installed, our products support long-term roofing health and
-                performance.</p>
+            <h3>Local Building Materials Stores for Easy Access</h3>
+            <p>Mini Materials is proud to serve your local area with the best in building materials. By offering an
+                online shopping experience combined with local delivery and pickup options, we make it easier than ever
+                to get the supplies you need quickly. For more details on materials, check out our <a
+                    href="index.html">Building Supplies</a> page.</p>
         </article>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Mini Materials. All rights reserved. <br> <a
-                    href="https://www.minimaterials.com/privacy-policy.html">Privacy Policy</a> | <a
-                    href="https://www.minimaterials.com/terms-of-service.html">Terms of Service</a></p>
+            <p>&copy; 2023 Mini Materials. All rights reserved. <br> <a href="privacy-policy.html">Privacy Policy</a> |
+                <a href="terms-of-service.html">Terms of Service</a>
+            </p>
         </div>
     </footer>
 </body>
