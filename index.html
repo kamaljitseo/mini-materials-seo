@@ -39,6 +39,7 @@
             background-color: var(--primary-color);
             color: white;
             padding: 20px 0;
+            position: relative;
         }
 
         nav ul {
@@ -62,6 +63,29 @@
             color: var(--accent-color);
         }
 
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/building-materials.jpg');
             background-size: cover;
@@ -125,25 +149,62 @@
         }
 
         @media (max-width: 768px) {
+
+            /* Make Navigation Responsive */
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                padding: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+                padding: 10px 0;
+                display: block;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav.active ul {
+                display: flex;
+            }
+
             .hero {
                 height: 300px;
                 padding: 0 15px;
-            }
-
-            nav ul {
-                gap: 15px;
             }
 
             .category-card img {
                 height: 180px;
             }
         }
-    </style>
+    </style><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSSSH9CWNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WSSSH9CWNR');
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <!-- Hamburger Menu -->
+            <button class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
             <nav>
                 <ul>
                     <li><a href="index.html">Building Supplies</a></li>
@@ -215,6 +276,16 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        // Toggle hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

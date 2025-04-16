@@ -39,6 +39,7 @@
             background-color: var(--primary-color);
             color: white;
             padding: 20px 0;
+            position: relative;
         }
 
         nav ul {
@@ -53,12 +54,38 @@
             color: white;
             text-decoration: none;
             font-weight: 500;
+            font-size: 1rem;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
             color: var(--accent-color);
         }
 
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/furniture-decor.jpg');
             background-size: cover;
@@ -86,16 +113,16 @@
 
         .categories {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             margin: 40px 0;
         }
 
         .category-card {
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -107,6 +134,7 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
+            display: block;
         }
 
         .category-content {
@@ -117,15 +145,67 @@
             background-color: var(--dark-color);
             color: white;
             padding: 40px 0;
-            margin-top: 40px;
+            margin-top: 60px;
             text-align: center;
         }
-    </style>
+
+        @media (max-width: 768px) {
+
+            /* Make Navigation Responsive */
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                padding: 10px;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+                padding: 10px 0;
+                display: block;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav.active ul {
+                display: flex;
+            }
+
+            .hero {
+                height: 300px;
+                padding: 0 15px;
+            }
+
+            .category-card img {
+                height: 180px;
+            }
+        }
+    </style><!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSSSH9CWNR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WSSSH9CWNR');
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <!-- Hamburger Menu -->
+            <button class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
             <nav>
                 <ul>
                     <li><a href="index.html">Building Supplies</a></li>
@@ -152,8 +232,7 @@
                 combine comfort and design. Whether you're looking for a contemporary look with sleek furniture or a
                 more classic, cozy feel, we offer a range of sets that fit your needs. Our living room sets include
                 sofas, chairs, and coffee tables that are designed to complement your space, creating a perfect
-                gathering place for friends and family. For more options, you can also visit our <a
-                    href="furniture-decor.html">Furniture & Decor</a> page.</p>
+                gathering place for friends and family.</p>
 
             <div class="categories">
                 <div class="category-card">
@@ -186,24 +265,21 @@
             <p>Transform your bedroom into a serene retreat with our carefully selected bedroom furniture. From elegant
                 beds and dressers to nightstands and accent pieces, we offer everything you need to create the perfect
                 atmosphere. Whether you prefer minimalist modern furniture or vintage-inspired designs, our pieces are
-                crafted to meet your specific needs. For more inspiration, visit our <a
-                    href="furniture-decor.html">Furniture & Decor</a> section.</p>
+                crafted to meet your specific needs.</p>
 
             <h2>Outdoor Furniture Ideas for Your Backyard</h2>
             <p>Enhance your outdoor living space with our range of outdoor furniture. Perfect for patios, gardens, or
                 balconies, our selection of outdoor furniture includes everything from lounge chairs to dining sets.
                 Enjoy your backyard in comfort and style with pieces designed to withstand the elements while offering a
                 stylish look. Whether you're hosting a summer gathering or enjoying a quiet afternoon, our outdoor
-                furniture ideas will help you create a space that is both functional and beautiful. Explore more in our
-                <a href="mini-garden.html">Mini Garden</a> section for outdoor-inspired projects.
-            </p>
+                furniture ideas will help you create a space that is both functional and beautiful.</p>
 
             <h2>Add the Perfect Touch with Throw Pillows</h2>
             <p>No room is complete without the perfect decor accents, and throw pillows are a quick and easy way to add
                 personality to your space. Whether you're looking for bold patterns to brighten up your living room or
                 subtle tones for a more serene feel in your bedroom, our selection of throw pillows for couches and beds
                 offers a wide variety of options. Add texture, color, and comfort to any room with our stylish pillows.
-                For more home accessories, visit our <a href="furniture-decor.html">Furniture & Decor</a> page.</p>
+            </p>
         </article>
     </main>
 
@@ -212,6 +288,16 @@
             <p>&copy; 2023 Mini Materials. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Toggle hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
