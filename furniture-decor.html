@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish Furniture & Decor for Every Room | Mini Materials</title>
+    <meta name="description"
+        content="Discover a wide selection of furniture and decor for your home at Mini Materials. From living room sets to throw pillows, find stylish pieces that fit your space and budget.">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/furniture-decor.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--light-color);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .category-content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="building-supplies.html">Building Supplies</a></li>
+                    <li><a href="furniture-decor.html">Furniture & Decor</a></li>
+                    <li><a href="roofing-flooring.html">Roofing & Flooring</a></li>
+                    <li><a href="diy-projects.html">DIY Projects</a></li>
+                    <li><a href="mini-garden.html">Mini Garden</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Furniture & Decor for Every Room in Your Home</h1>
+            <p>Transform your space with our stylish collections</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <article>
+            <h2>Explore Our Range of Living Room Sets</h2>
+            <p>A comfortable living room is the heart of any home. Mini Materials provides stylish living room sets that
+                combine comfort and design. Whether you're looking for a contemporary look with sleek furniture or a
+                more classic, cozy feel, we offer a range of sets that fit your needs. Our living room sets include
+                sofas, chairs, and coffee tables that are designed to complement your space, creating a perfect
+                gathering place for friends and family. For more options, you can also visit our <a
+                    href="furniture-decor.html">Furniture & Decor</a> page.</p>
+
+            <div class="categories">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Living Room Set - Furniture & Decor at Mini Materials">
+                    <div class="category-content">
+                        <h3>Living Room Sets</h3>
+                        <p>Complete collections for a coordinated look</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Throw Pillows - Furniture & Decor at Mini Materials">
+                    <div class="category-content">
+                        <h3>Throw Pillows</h3>
+                        <p>Add personality to your space</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Bedroom Furniture - Mini Materials">
+                    <div class="category-content">
+                        <h3>Bedroom Furniture</h3>
+                        <p>Create your perfect retreat</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Decorate Your Bedroom with Our Stylish Furniture</h2>
+            <p>Transform your bedroom into a serene retreat with our carefully selected bedroom furniture. From elegant
+                beds and dressers to nightstands and accent pieces, we offer everything you need to create the perfect
+                atmosphere. Whether you prefer minimalist modern furniture or vintage-inspired designs, our pieces are
+                crafted to meet your specific needs. For more inspiration, visit our <a
+                    href="furniture-decor.html">Furniture & Decor</a> section.</p>
+
+            <h2>Outdoor Furniture Ideas for Your Backyard</h2>
+            <p>Enhance your outdoor living space with our range of outdoor furniture. Perfect for patios, gardens, or
+                balconies, our selection of outdoor furniture includes everything from lounge chairs to dining sets.
+                Enjoy your backyard in comfort and style with pieces designed to withstand the elements while offering a
+                stylish look. Whether you're hosting a summer gathering or enjoying a quiet afternoon, our outdoor
+                furniture ideas will help you create a space that is both functional and beautiful. Explore more in our
+                <a href="mini-garden.html">Mini Garden</a> section for outdoor-inspired projects.
+            </p>
+
+            <h2>Add the Perfect Touch with Throw Pillows</h2>
+            <p>No room is complete without the perfect decor accents, and throw pillows are a quick and easy way to add
+                personality to your space. Whether you're looking for bold patterns to brighten up your living room or
+                subtle tones for a more serene feel in your bedroom, our selection of throw pillows for couches and beds
+                offers a wide variety of options. Add texture, color, and comfort to any room with our stylish pillows.
+                For more home accessories, visit our <a href="furniture-decor.html">Furniture & Decor</a> page.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mini Materials. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

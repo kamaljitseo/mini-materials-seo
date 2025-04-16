@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIY Projects: Woodworking, Crafts & Home Improvement | Mini Materials</title>
+    <meta name="description"
+        content="Explore creative DIY projects with Mini Materials. From woodworking and raised beds to home improvement ideas and Christmas crafts, we have everything you need to bring your projects to life.">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/diy-projects.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--light-color);
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .category-content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="building-supplies.html">Building Supplies</a></li>
+                    <li><a href="furniture-decor.html">Furniture & Decor</a></li>
+                    <li><a href="roofing-flooring.html">Roofing & Flooring</a></li>
+                    <li><a href="diy-projects.html">DIY Projects</a></li>
+                    <li><a href="mini-garden.html">Mini Garden</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Creative DIY Projects for Every Skill Level</h1>
+            <p>Bring your ideas to life with our materials and inspiration</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <article>
+            <h2>Top DIY Wood Projects You Can Build Today</h2>
+            <p>Woodworking is one of the most popular DIY activities for homeowners and hobbyists alike. From building
+                furniture to small decor items, DIY wood projects can add a personal touch to your home. Popular DIY
+                woodworking projects include making shelves, tables, picture frames, and even birdhouses. With the right
+                tools and some basic instructions, you can create beautiful, handcrafted wood pieces. Want to check out
+                other materials? Visit our <a href="building-supplies.html">Building Supplies</a> page for everything
+                you need!</p>
+
+            <div class="categories">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="DIY wood projects - Mini Materials">
+                    <div class="category-content">
+                        <h3>Wood Projects</h3>
+                        <p>Create beautiful handcrafted wood pieces</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Home improvement - DIY Projects at Mini Materials">
+                    <div class="category-content">
+                        <h3>Home Improvement</h3>
+                        <p>Transform your space with simple projects</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="DIY crafts - Mini Materials">
+                    <div class="category-content">
+                        <h3>Craft Ideas</h3>
+                        <p>Creative projects for every season</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>DIY Home Improvement Ideas for Every Home</h2>
+            <p>Home improvement doesn’t have to be overwhelming. Whether you’re renovating a room, updating your
+                kitchen, or working on an outdoor space, DIY home improvement can make a significant difference. Simple
+                projects like installing new lighting, painting walls, or updating your flooring can transform your
+                space without breaking the bank. For more inspiration, head over to our <a href="diy-projects.html">DIY
+                    Projects</a> page.</p>
+
+            <h2>Get Crafty: DIY Crafts and Christmas Projects</h2>
+            <p>DIY crafts offer endless possibilities for creative expression. Whether it’s making home decor items like
+                candles, vases, or wreaths, or creating seasonal projects like DIY Christmas crafts, you’ll find
+                something fun and useful. DIY projects for beginners might include simple paper crafts or knitted items,
+                while more advanced crafters might try creating personalized gifts or upcycling furniture. Get creative
+                and personalize your space with unique handmade items.</p>
+
+            <h2>How to Build DIY Raised Beds for Your Garden</h2>
+            <p>For gardening enthusiasts, DIY raised beds are an excellent way to grow your own food, flowers, and
+                herbs. Raised beds are easy to build, affordable, and great for improving soil drainage. Start by
+                selecting the right materials, like untreated wood or stone, and follow a few basic steps to create the
+                perfect garden space. Need materials? Visit our <a href="building-supplies.html">Building Supplies</a>
+                page for the best options!</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mini Materials. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
